@@ -378,3 +378,67 @@ p:last-child{margin-bottom:0}
   html{scroll-behavior:auto}
   .galeria img{transition:none}
 }
+
+/* ---------- faixa da frase (a alma do projeto) ---------- */
+.sec--frase{background:var(--blush);position:relative;overflow:hidden}
+.sec--frase::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 50% 0%,rgba(247,244,241,.55),rgba(247,244,241,0) 62%);pointer-events:none}
+.frase{position:relative;margin:0;text-align:center;max-width:820px;margin-inline:auto}
+.frase p{font-family:var(--serif);color:var(--chocolate);
+  font-size:clamp(27px,4.4vw,46px);line-height:1.28;margin:0}
+.frase p em{font-style:italic;color:var(--rosa-escuro)}
+.frase .rule{margin:28px auto}
+.frase cite{font-style:normal;font-family:var(--sans);font-size:12px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--rosa-escuro)}
+
+/* ---------- página de edições ---------- */
+.sec--capa{background:var(--off-white);padding-top:clamp(96px,12vw,150px);position:relative;overflow:hidden}
+.sec--capa::before{content:"";position:absolute;inset:-30% -10% auto -10%;height:80%;
+  background:radial-gradient(60% 70% at 22% 30%,rgba(242,215,218,.85),rgba(242,215,218,0) 70%),
+             radial-gradient(50% 60% at 82% 10%,rgba(201,140,143,.34),rgba(201,140,143,0) 72%);
+  pointer-events:none}
+.capa{position:relative;text-align:center;max-width:820px;margin-inline:auto}
+.capa h1{font-family:var(--serif);color:var(--chocolate);font-weight:400;
+  font-size:clamp(32px,5.2vw,58px);line-height:1.18;margin:14px 0 0}
+.capa h1 em{font-style:italic;color:var(--rosa-escuro)}
+.capa .lead{margin-inline:auto;max-width:62ch}
+
+.ed__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);
+  gap:clamp(32px,5vw,68px);align-items:start}
+.ed__grid--inv .ed__txt{order:2}
+.ed__grid--inv .ed__fotos{order:1}
+.ed__txt h2{margin-top:10px}
+.ed__local{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--rosa-escuro);margin:14px 0 22px}
+.ed__sub{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--texto-suave);margin:34px 0 14px}
+.ed__lista{list-style:none;margin:0;padding:0}
+.ed__lista li{position:relative;padding:9px 0 9px 26px;font-size:15px;color:var(--texto);
+  border-bottom:1px solid rgba(122,90,86,.14)}
+.ed__lista li::before{content:"";position:absolute;left:2px;top:17px;width:7px;height:7px;
+  border-radius:50%;background:var(--dourado)}
+.ed__gente{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.ed__gente li{display:grid;gap:3px}
+.ed__gente b{font-family:var(--serif);font-size:19px;font-weight:500;color:var(--chocolate)}
+.ed__gente span{font-size:14px;color:var(--texto-suave);line-height:1.55}
+.ed__marcas{font-size:14px;color:var(--texto-suave);line-height:1.9;margin:0}
+.ed__quote{margin:34px 0 0;padding:24px 0 0;border-top:1px solid rgba(122,90,86,.2)}
+.ed__quote p{font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);line-height:1.34;
+  color:var(--chocolate);margin:0}
+.ed__quote p em{font-style:italic;color:var(--rosa-escuro)}
+.ed__quote cite{display:block;margin-top:14px;font-style:normal;font-family:var(--sans);
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--rosa-escuro)}
+
+.ed__fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:sticky;top:96px}
+.ed__fotos figure{margin:0;overflow:hidden;border-radius:2px;background:var(--creme-escuro)}
+.ed__fotos img{display:block;width:100%;height:100%;object-fit:cover}
+.ed__fotos img[data-pos]{object-position:center var(--pos,50%)}
+.ed-a{grid-column:span 2;aspect-ratio:4/3}
+.ed-b{aspect-ratio:3/4}
+
+@media (max-width:900px){
+  .ed__grid{grid-template-columns:1fr;gap:32px}
+  .ed__grid--inv .ed__txt{order:1}
+  .ed__grid--inv .ed__fotos{order:2}
+  .ed__fotos{position:static}
+}
