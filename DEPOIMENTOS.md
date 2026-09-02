@@ -45,17 +45,28 @@ WhatsApp. Guarde esse "pode usar".
 
 Servem como referência de tom e tamanho. Nenhum é real.
 
-1. "Eu cheguei achando que seria mais um evento de foto bonita. Saí com o telefone de três mulheres com quem eu falo até hoje." — Ana Paula, 41
-2. "A parte de finanças foi a que eu mais tive vontade de fugir, e a que mais mudou alguma coisa. Cheguei em casa e abri a planilha que eu evitava havia dois anos." — Renata, 36
-3. "Fazia tempo que eu não passava três horas sem olhar o celular. Só percebi quando acabou." — Juliana, 44
-4. "Eu fui sozinha, sem conhecer ninguém. Em vinte minutos estava conversando como se fosse gente que eu já conhecia há anos." — Marcela, 33
-5. "O que me pegou foi ninguém estar competindo. Não tinha aquele clima de ver quem chegou mais longe." — Bianca, 39
-6. "Sou mãe de dois e faz anos que meu domingo não era meu. Aquele domingo foi." — Carolina, 37
-7. "Voltei diferente de um jeito que a gente não sabe explicar direito. Só sei que na segunda eu pedi uma reunião que estava adiando havia meses." — Patrícia, 45
-8. "A prática no parque foi linda, mas o que ficou foi a roda de conversa depois. Mulher falando de verdade é raro." — Letícia, 31
-9. "Eu esperava conteúdo e recebi conteúdo. O que eu não esperava era sair com vontade de chorar de coisa boa." — Fernanda, 42
-10. "Cheguei achando que precisava estar bem para participar. Descobri que dava para chegar do jeito que eu estava." — Sabrina, 35
+1. "Saí de lá com energia para a semana inteira. Comecei a segunda de um jeito que fazia tempo que eu não começava." — Ana Paula, 41
+2. "Yoga no meio do parque, num domingo de manhã, quarenta mulheres rindo junto. Eu não sabia o quanto eu precisava disso." — Renata, 36
+3. "O brunch estava lindo e a conversa estava melhor ainda. Fiquei até o último minuto e ainda achei pouco." — Juliana, 44
+4. "Fui sozinha e voltei com um grupo no WhatsApp. A gente ainda combina de se ver." — Marcela, 33
+5. "A conversa sobre dinheiro foi a melhor que eu já ouvi. Sem julgamento, sem palavra difícil, e eu saí com três coisas para fazer na mesma semana." — Bianca, 39
+6. "Dá para sentir o cuidado em cada detalhe, do welcome kit à última música. Foi feito por quem ama fazer isso." — Carolina, 37
+7. "Cheguei tímida e em meia hora estava conversando com todo mundo. É um lugar fácil de estar." — Patrícia, 45
+8. "Levei minha irmã na edição seguinte. Melhor presente que eu já dei para ela." — Letícia, 31
+9. "Passei a semana inteira falando do ELA³ para as minhas amigas. Já estou na lista da próxima." — Fernanda, 42
+10. "Eu esperava um evento bonito. Não esperava sair tão animada, com vontade de fazer coisa." — Sabrina, 35
 
-O padrão que faz esses funcionarem: cada um traz **uma coisa concreta** (a
-planilha, o telefone de três mulheres, a reunião adiada) em vez de adjetivo. Ao
-transcrever os reais, guarde o detalhe concreto e corte o resto.
+## O tom, que é o que mais importa
+
+Uma primeira versão destes textos saiu introspectiva demais, falando de cansaço,
+de rotina pesada e de coisa adiada. A Mari cortou na hora, e com razão: o ELA³ é
+uma manhã boa, não uma sessão de terapia. Quem lê tem que ter vontade de estar
+ali.
+
+Então o depoimento tem que ser **animado e falar do evento**: o parque, a
+prática, o brunch, a conversa, as pessoas, a energia com que ela foi embora. E
+mesmo assim carregar **uma coisa concreta**, porque é o detalhe específico que faz
+soar verdade. "A gente ainda combina de se ver", "três coisas para fazer na mesma
+semana", "levei minha irmã na edição seguinte".
+
+Adjetivo sozinho não convence ninguém. Adjetivo mais o detalhe, sim.
