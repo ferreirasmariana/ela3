@@ -318,9 +318,12 @@ p:last-child{margin-bottom:0}
 }
 .verbos{list-style:none;margin:0 0 30px;padding:0}
 .verbos li{
-  display:grid;grid-template-columns:118px 1fr;gap:16px;
+  display:grid;grid-template-columns:clamp(142px,15vw,168px) 1fr;gap:18px;
   padding:13px 0;border-bottom:1px solid rgba(74,47,42,.12);
   font-size:14.5px;align-items:baseline;
+}
+@media (max-width:560px){
+  .verbos li{grid-template-columns:1fr;gap:5px}
 }
 .verbos li:last-child{border-bottom:0}
 .verbos b{font-size:14px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--rosa-escuro)}

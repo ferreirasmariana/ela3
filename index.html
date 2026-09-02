@@ -313,27 +313,35 @@
     <div class="sec__head reveal">
       <p class="eyebrow">Garanta sua vaga</p>
       <h2>Viva essa experiência<br>por inteira.</h2>
-      <p class="lead">Preencha os campos abaixo e a Tatiana entra em contato com você pelo WhatsApp com os detalhes da 5ª edição.</p>
+      <p class="lead">Preencha os campos abaixo e a Tatiana entra em contato com você com os detalhes da 5ª edição.</p>
     </div>
 
-    <form class="form reveal" id="form-inscricao" novalidate>
+    <form class="form reveal" id="form-inscricao" method="POST"
+          action="https://formsubmit.co/equipe.tatianaribeiro@gmail.com">
+      <input type="hidden" name="_subject" value="ELA³ · nova inscrição pelo site">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://ela3.com.br/obrigada.html">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <input type="hidden" name="Origem do formulário" value="Inscrição · 5ª edição">
+
       <div class="field">
         <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Como você quer ser chamada" required autocomplete="name">
+        <input type="text" id="nome" name="Nome" placeholder="Como você quer ser chamada" required autocomplete="name">
       </div>
       <div class="form__row">
         <div class="field">
           <label for="whats">WhatsApp</label>
-          <input type="tel" id="whats" name="whats" placeholder="(11) 99999-9999" required autocomplete="tel">
+          <input type="tel" id="whats" name="WhatsApp" placeholder="(11) 99999-9999" required autocomplete="tel">
         </div>
         <div class="field">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email">
+          <input type="email" id="email" name="E-mail" placeholder="voce@email.com" required autocomplete="email">
         </div>
       </div>
       <div class="field">
         <label for="origem">Como você conheceu o ELA³?</label>
-        <select id="origem" name="origem">
+        <select id="origem" name="Como conheceu o ELA3">
           <option value="">Selecione</option>
           <option>Instagram</option>
           <option>Indicação de uma amiga</option>
@@ -343,10 +351,6 @@
         </select>
       </div>
       <button class="btn btn--gold" type="submit">Quero minha vaga</button>
-      <p class="form__nota">
-        Ao enviar, o WhatsApp abre com a sua mensagem pronta para a Tatiana.<br>
-        Prefere ir direto? <a href="https://wa.me/5511976100953?text=Oi%2C%20Tatiana!%20Quero%20saber%20mais%20sobre%20a%205%C2%AA%20edi%C3%A7%C3%A3o%20do%20ELA%C2%B3." target="_blank" rel="noopener">Falar no WhatsApp</a>
-      </p>
     </form>
   </div>
 </section>
@@ -429,22 +433,6 @@
   setTimeout(todos,2500);
 })();
 
-// formulário: monta a mensagem e abre o WhatsApp da Tatiana
-(function(){
-  var f=document.getElementById('form-inscricao');
-  if(!f) return;
-  f.addEventListener('submit',function(ev){
-    ev.preventDefault();
-    var nome=f.nome.value.trim(), whats=f.whats.value.trim(), email=f.email.value.trim(), origem=f.origem.value;
-    if(!nome||!whats){ (nome?f.whats:f.nome).focus(); return }
-    var msg='Oi, Tatiana! Quero garantir minha vaga na 5a edicao do ELA3 (13 de setembro, Parque Burle Marx).'
-      +'\n\nNome: '+nome
-      +'\nWhatsApp: '+whats
-      +(email?'\nE-mail: '+email:'')
-      +(origem?'\nConheci por: '+origem:'');
-    window.open('https://wa.me/5511976100953?text='+encodeURIComponent(msg),'_blank','noopener');
-  });
-})();
 </script>
 </body>
 </html>

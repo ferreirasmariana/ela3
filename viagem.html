@@ -117,24 +117,32 @@
       <p class="lead">Deixe seu nome. Você vai ser das primeiras a saber quando tiver data, destino e valor, e antes disso a gente quer ouvir o que você espera de uma viagem assim.</p>
     </div>
 
-    <form class="form reveal" id="form-viagem" novalidate>
+    <form class="form reveal" id="form-viagem" method="POST"
+          action="https://formsubmit.co/equipe.tatianaribeiro@gmail.com">
+      <input type="hidden" name="_subject" value="ELA³ Viagem · lista de interesse">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://ela3.com.br/obrigada.html">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <input type="hidden" name="Origem do formulário" value="Lista de interesse · ELA3 Viagem">
+
       <div class="campo">
         <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Como você quer ser chamada" required autocomplete="name">
+        <input type="text" id="nome" name="Nome" placeholder="Como você quer ser chamada" required autocomplete="name">
       </div>
       <div class="dupla">
         <div class="campo">
           <label for="whats">WhatsApp</label>
-          <input type="tel" id="whats" name="whats" placeholder="(11) 99999-9999" required autocomplete="tel">
+          <input type="tel" id="whats" name="WhatsApp" placeholder="(11) 99999-9999" required autocomplete="tel">
         </div>
         <div class="campo">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email">
+          <input type="email" id="email" name="E-mail" placeholder="voce@email.com" autocomplete="email">
         </div>
       </div>
       <div class="campo">
         <label for="tipo">Que tipo de viagem te interessa mais?</label>
-        <select id="tipo" name="tipo">
+        <select id="tipo" name="Tipo de viagem">
           <option value="">Selecione</option>
           <option>Natureza e silêncio, dentro do Brasil</option>
           <option>Praia, com tempo de não fazer nada</option>
@@ -145,10 +153,9 @@
       </div>
       <div class="campo">
         <label for="espera">O que você mais gostaria de viver nessa viagem?</label>
-        <input type="text" id="espera" name="espera" placeholder="Em poucas palavras, se quiser">
+        <input type="text" id="espera" name="O que gostaria de viver" placeholder="Em poucas palavras, se quiser">
       </div>
       <button class="btn btn--solid btn--bloco" type="submit">Entrar na lista</button>
-      <p class="form__nota">Ao enviar, o WhatsApp abre com a sua mensagem pronta para a Tatiana.</p>
     </form>
   </div>
 </section>
@@ -216,23 +223,7 @@
   setTimeout(todos,2500);
 })();
 
-(function(){
-  var f=document.getElementById('form-viagem');
-  if(!f) return;
-  f.addEventListener('submit',function(ev){
-    ev.preventDefault();
-    var nome=f.nome.value.trim(), whats=f.whats.value.trim(), email=f.email.value.trim(),
-        tipo=f.tipo.value, espera=f.espera.value.trim();
-    if(!nome||!whats){ (nome?f.whats:f.nome).focus(); return }
-    var msg='Oi, Tatiana! Quero entrar na lista de interesse do ELA3 Viagem.'
-      +'\n\nNome: '+nome
-      +'\nWhatsApp: '+whats
-      +(email?'\nE-mail: '+email:'')
-      +(tipo?'\nTipo de viagem: '+tipo:'')
-      +(espera?'\nO que eu gostaria de viver: '+espera:'');
-    window.open('https://wa.me/5511976100953?text='+encodeURIComponent(msg),'_blank','noopener');
-  });
-})();
+
 </script>
 </body>
 </html>
