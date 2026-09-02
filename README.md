@@ -11,6 +11,13 @@ assets/img/           fotos das edições anteriores, em .webp
 assets/svg/           logo, lockup e elementos gráficos, vetoriais
 ```
 
+## Depois que uma edição acontece
+
+Veja o **[DEPOIS-DO-EVENTO.md](DEPOIS-DO-EVENTO.md)**. Ele lista, arquivo por
+arquivo, tudo que vence no dia seguinte ao encontro, e o `index.html` já tem os
+dois estados do bloco da próxima edição escritos, bastando comentar um e
+descomentar o outro.
+
 ## O que precisa ser trocado a cada edição
 
 Tudo está em texto puro no HTML, sem build. Buscar e substituir:
