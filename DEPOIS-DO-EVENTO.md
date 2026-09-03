@@ -78,8 +78,14 @@ Quando a 5ª edição passar, comente a seção inteira (de
 `<!-- ============ INGRESSO ============ -->` até o `</section>` que fecha) e
 deixe no ar só o formulário, que já está dentro dela, logo depois do "Ou".
 
-Quando a 6ª edição tiver ingresso à venda, descomente e troque o link do Sympla
-pelo do evento novo. **Só o endereço muda**, o resto do card continua servindo.
+Quando a 6ª edição tiver ingresso à venda, descomente e troque **quatro coisas**:
+
+- o link do Sympla nos dois lugares acima
+- o preço e o parcelamento no bloco `ingresso__preco` (hoje R$ 159,90 e 12x R$ 18,19)
+- a data limite em `ingresso__prazo` (hoje "Vendas até 11 de setembro")
+- os campos `price` e `validThrough` dentro de `offers`, no JSON-LD
+
+O resto do card continua servindo.
 
 O que **não** se mexe: a comunidade do WhatsApp e o formulário. Os dois são
 permanentes e não dependem de haver edição marcada.
