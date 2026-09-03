@@ -38,6 +38,12 @@
     "name":"Parque Burle Marx",
     "address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"}
   },
+  "offers":{
+    "@type":"Offer",
+    "url":"https://www.sympla.com.br/evento/ela-3-experience/3552434",
+    "availability":"https://schema.org/InStock",
+    "priceCurrency":"BRL"
+  },
   "description":"Um espaço para mulheres se reconectarem com quem são e assumirem o protagonismo da própria vida. Manhã intimista para cerca de 40 mulheres, com aula de movimento, experiências de marcas, ELA³ Talk, coffee break e networking.",
   "organizer":{"@type":"Person","name":"Tatiana Ribeiro"}
 }
@@ -60,7 +66,7 @@
         <li><a href="parceiros.html">Para marcas</a></li>
       </ul>
     </nav>
-    <a class="btn btn--solid" href="#inscricao">Quero minha vaga</a>
+    <a class="btn btn--solid" href="#ingresso">Garantir ingresso</a>
   </div>
 </header>
 
@@ -77,7 +83,7 @@
     <p class="hero__onde">Parque Burle Marx · São Paulo</p>
     <p class="hero__tag">Um encontro para você por inteira.</p>
     <div class="hero__ctas">
-      <a class="btn btn--solid" href="#inscricao">Quero minha vaga</a>
+      <a class="btn btn--solid" href="#ingresso">Garantir meu ingresso</a>
       <a class="btn btn--ghost" href="#experiencia">Ver a programação</a>
     </div>
     <p class="hero__vagas">Cerca de 40 mulheres · vagas limitadas</p>
@@ -388,23 +394,59 @@
   </div>
 </section>
 
-<!-- ============ INSCRIÇÃO ============ -->
-<section class="sec sec--choc" id="inscricao">
+<!-- ============ INGRESSO ============ -->
+<section class="sec sec--choc" id="ingresso">
   <div class="wrap-narrow">
     <div class="sec__head reveal">
       <p class="eyebrow">Garanta sua vaga</p>
       <h2>Viva essa experiência<br>por inteira.</h2>
-      <p class="lead">Preencha os campos abaixo e a Tatiana entra em contato com você com os detalhes da 5ª edição.</p>
+      <p class="lead">São cerca de 40 vagas, e elas acabam. A compra é feita pelo Sympla, com confirmação na hora.</p>
+    </div>
+
+    <div class="ingresso reveal">
+      <div class="ingresso__topo">
+        <p class="ingresso__ed">ELA³ · 5ª edição</p>
+        <span class="ingresso__sel">Vagas limitadas</span>
+      </div>
+
+      <ul class="ingresso__lista">
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.6" width="14" height="12.4" rx="1.6"/><path d="M3 8.2h14M6.6 2.9v3M13.4 2.9v3"/></svg>
+          <div><b>Domingo, 13 de setembro de 2026</b><span>Das 9h às 13h</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17.6s6-5.2 6-9.3A6 6 0 0 0 4 8.3c0 4.1 6 9.3 6 9.3z"/><circle cx="10" cy="8.2" r="2.2"/></svg>
+          <div><b>Espaço Mata Atlântica · Parque Burle Marx</b><span>Avenida Dona Helena Pereira de Moraes, 200 · São Paulo</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.6l1.7 4.7 4.7 1.7-4.7 1.7L10 15.4l-1.7-4.7L3.6 9l4.7-1.7z"/></svg>
+          <div><b>Café da manhã, aula de movimento e ELA³ Talk</b><span>Com experiências de marcas, degustações, presentes e sorteios.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.4"/><path d="M10 9.3v4.4M10 6.6v.1"/></svg>
+          <div><b>Roupa confortável para se movimentar</b><span>Dress code em tons de rosa, chocolate ou off-white.</span></div>
+        </li>
+      </ul>
+
+      <a class="btn btn--gold" href="https://www.sympla.com.br/evento/ela-3-experience/3552434?utm_source=site&amp;utm_medium=referral&amp;utm_campaign=site_ela3" target="_blank" rel="noopener">Comprar meu ingresso</a>
+      <p class="ingresso__nota">Compra e pagamento pelo Sympla, em até 12 vezes.<br>Você recebe o ingresso por e-mail assim que finalizar.</p>
+    </div>
+
+    <p class="ingresso__ou reveal">Ou</p>
+
+    <div class="sec__head reveal" id="inscricao" style="margin-bottom:clamp(30px,4vw,40px)">
+      <h2 style="font-size:clamp(25px,3.2vw,36px)">Quer conversar<br>antes de decidir?</h2>
+      <p class="lead">Deixe seus dados e a Tatiana fala com você. Se esta edição não for a sua, você fica sabendo da próxima em primeira mão.</p>
     </div>
 
     <form class="form reveal" id="form-inscricao" method="POST"
           action="https://formsubmit.co/equipe.tatianaribeiro@gmail.com">
-      <input type="hidden" name="_subject" value="ELA³ · nova inscrição pelo site">
+      <input type="hidden" name="_subject" value="ELA³ · novo contato pelo site">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://ela3.com.br/obrigada.html">
       <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-      <input type="hidden" name="Origem do formulário" value="Inscrição · 5ª edição">
+      <input type="hidden" name="Origem do formulário" value="Site · quer conversar antes de comprar">
 
       <div class="field">
         <label for="nome">Nome completo</label>
@@ -431,8 +473,24 @@
           <option>Outro</option>
         </select>
       </div>
-      <button class="btn btn--gold" type="submit">Quero minha vaga</button>
+      <button class="btn btn--gold" type="submit">Falar com a Tatiana</button>
     </form>
+  </div>
+</section>
+
+<!-- ============ COMUNIDADE ============ -->
+<section class="sec sec--blush" id="comunidade" style="padding-block:clamp(48px,6.5vw,78px)">
+  <div class="wrap">
+    <div class="comunidade reveal">
+      <div class="comunidade__ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2"/></svg>
+      </div>
+      <div>
+        <h3>Entre para a nossa comunidade</h3>
+        <p>Um grupo no WhatsApp com as mulheres do ELA³. É por lá que as datas, os convites e as novidades saem primeiro, e onde a conversa continua entre uma edição e outra.</p>
+      </div>
+      <a class="btn btn--solid" href="https://chat.whatsapp.com/LwvGQSp4ZxnBvHxgnAwB1E?mode=gi_t" target="_blank" rel="noopener">Entrar na comunidade</a>
+    </div>
   </div>
 </section>
 
@@ -477,6 +535,7 @@
           <li><a href="#experiencia">Próxima edição</a></li>
           <li><a href="edicoes.html">Edições anteriores</a></li>
           <li><a href="viagem.html">ELA³ Viagem</a></li>
+          <li><a href="#comunidade">Comunidade no WhatsApp</a></li>
           <li><a href="parceiros.html">Para marcas</a></li>
         </ul>
       </div>
@@ -484,6 +543,7 @@
         <h4>Fale com a gente</h4>
         <ul>
           <li><a href="https://wa.me/5511976100953" target="_blank" rel="noopener">WhatsApp · 11 97610-0953</a></li>
+          <li><a href="https://chat.whatsapp.com/LwvGQSp4ZxnBvHxgnAwB1E?mode=gi_t" target="_blank" rel="noopener">Comunidade no WhatsApp</a></li>
           <li><a href="https://instagram.com/ela3_club" target="_blank" rel="noopener">@ela3_club</a></li>
           <li><a href="https://instagram.com/tatiana_mmmribeiro" target="_blank" rel="noopener">@tatiana_mmmribeiro</a></li>
         </ul>
