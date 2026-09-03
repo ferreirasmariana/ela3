@@ -233,7 +233,9 @@ p:last-child{margin-bottom:0}
 }
 .crono li:last-child{border-bottom:0}
 .crono time{font-family:var(--serif);font-size:19px;color:var(--rosa-escuro)}
-.crono span{font-size:14.5px;letter-spacing:.02em}
+.crono span{display:block;font-size:14.5px;letter-spacing:.02em}
+.crono small{display:block;margin-top:6px;font-size:13px;line-height:1.55;
+  letter-spacing:0;color:var(--texto-suave)}
 .crono li.is-ela{background:linear-gradient(90deg,rgba(212,175,55,.13),transparent);margin-inline:-14px;padding-inline:14px}
 .crono li.is-ela span{font-weight:600}
 

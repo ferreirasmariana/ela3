@@ -28,14 +28,14 @@ Comente o primeiro, descomente o segundo. É a única mudança estrutural.
 
 | Linha aproximada | O que está lá | Trocar por |
 |---|---|---|
-| `<title>` | `5ª edição · 13 de setembro de 2026 · São Paulo` | `ELA³ Club · encontros para mulheres · São Paulo` |
+| `<title>` | `5ª edição · 13 de setembro de 2026 · São Paulo` | `ELA³ · encontros para mulheres · São Paulo` |
 | `meta description` e `og:description` | trazem a data | tirar a data, manter o resto |
 | bloco `application/ld+json` | é o registro de evento que o Google lê, e traz o link do Sympla | **apagar o bloco inteiro** enquanto não houver data nova. Evento sem data no Google vira erro |
 | hero | `5ª edição`, `13 de setembro de 2026`, `Parque Burle Marx · São Paulo` | `Próxima edição`, `Em breve`, e apagar o local |
 | botões `Garantir ingresso` | 2 ocorrências (menu e hero), apontando para `#ingresso` | `Entrar na lista`, apontando para `#inscricao` |
 | **seção `INGRESSO`** | o card com a data, o local e o botão do Sympla | **comentar a seção inteira.** Ela existe só enquanto há ingresso à venda. Ver o passo 3 |
 | mensagem do WhatsApp no script | `Quero garantir minha vaga na 5a edicao...` | `Quero entrar na lista da proxima edicao do ELA3.` |
-| rodapé | `ELA³ Club · 5ª edição · 13 de setembro de 2026` | `ELA³ Club · Mente, corpo e finanças` |
+| rodapé | `ELA³ · 5ª edição · 13 de setembro de 2026` | `ELA³ · Mente, corpo e finanças` |
 
 ### `edicoes.html`
 
@@ -107,3 +107,16 @@ grep -n "13 de setembro\|5ª edição\|2026-09-13\|sympla\|Garantir" *.html
 ```
 
 Se esse comando não retornar nada, a virada está completa.
+
+---
+
+## Pendente: página do ELA³ Club
+
+Decisão da Tatiana em 03/09/2026: **ELA³ Club** é o nome do Instagram e do
+futuro programa de clube por filiação, não é o nome do evento. Por isso o
+"Club" saiu de todo o site, e o evento passou a se chamar **ELA³ Experience**,
+igual ao Sympla e ao lockup da marca.
+
+Quando o clube existir de verdade, criar uma página própria para ele,
+no mesmo formato de `viagem.html`, e um link novo no menu.
+Falta a Tatiana definir: o que é o clube, quanto custa, o que a filiada recebe.
